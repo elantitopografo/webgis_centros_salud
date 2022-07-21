@@ -1,0 +1,16 @@
+var map = L.map('map', {
+center: [-18.014405, -70.251853],
+zoom: 18,
+minZoom: 10,
+maxZoom: 20,
+maxBounds: [[-18.392,-71.1491], [-16.7634,-69.4133]]
+});
+
+var basemapOSM = L.tileLayer ('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <ahref="http://osm.org/copyright"> OpenStreetMap</a> contributor'
+});
+
+basemapOSM.addTo(map);
+
+
+
